@@ -1,0 +1,7 @@
+#spring:
+#  #数据源
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mysql://123.58.34.185:3306/lxy_db
+#    username: lxy
+#    password: lxydb

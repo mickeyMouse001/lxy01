@@ -1,0 +1,11 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      name: config
+      server:
+        git:
+          uri: https://github.com/mickeyMouse001/lxy.git
+          force-pull: true

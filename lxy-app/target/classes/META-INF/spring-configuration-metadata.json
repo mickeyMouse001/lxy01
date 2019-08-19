@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "netty.server",
+      "type": "com.lxy.properties.ServerProperties",
+      "sourceType": "com.lxy.properties.ServerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "netty.server.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lxy.properties.ServerProperties"
+    }
+  ],
+  "hints": []
+}

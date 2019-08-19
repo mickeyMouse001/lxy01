@@ -1,0 +1,60 @@
+server:
+  port: 8761
+  servlet:
+    context-path: /app
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8760/eureka/
+spring:
+  application:
+    name: app
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+#MQ
+#spring.artemis.mode=native 指定Artemis 的部署模式, 默认为auto-detected(也可以为native or embedded).
+#spring.artemis.host=localhost
+#spring.artemis.port=61616
+#spring.artemis.user=mq
+#spring.artemis.password=123
+#  artemis:
+#    mode: native
+#    host: localhost
+#    port: 61616
+#    user: mq
+#    password: 123456
+    
+#spring.activemq.broker-url=tcp://activemq.tony.com:61616
+#spring.activemq.user=admin
+#spring.activemq.password=admin
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+    
+#  messages:
+#    encoding: UTF-8
+#数据源
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://123.58.34.185:3306/lxy_db
+    username: lxy
+    password: lxydb
+##redis连接信息
+  redis:  
+    host: 127.0.0.1
+    password: 123456
+    port: 6379
+    pool:
+      max-idle: 100
+      min-idle: 1
+      max-active: 1000
+      max-wait: -1
+
+
+netty:
+  server:
+    port: 9999
